@@ -107,6 +107,7 @@ input.password {
   padding: 14px 20px;
   text-decoration: none;
   font-size: 16px;
+  margin-right:-5px;
 }
 
 /* Change the color of links on hover */
@@ -122,17 +123,36 @@ input.password {
 }
 
 .search-container input[type=text] {
+  margin-left: -8px;
+  float: left;
   padding: 6px;
-  margin: auto;
   font-size: 16px;
   border: 1px solid #ccc;
   text-indent: 25px;
 }
 
 #search-icon {
-  position: absolute;
+  float: left;
   opacity: .5;
-  transform: translate(8px, 8px);
+  transform: translate(17px, 8px);
+}
+
+.new-patient-button-container {
+  margin-top: -3px;
+  display: inline-block;
+  float: right;
+}
+
+.new-patient-button {
+  font-size: 30px;
+  color: #006b97;
+  background: none;
+  border: none;
+}
+
+.new-patient-button:hover {
+  color: #78c6ed;
+  cursor: pointer;
 }
 
 .patient-table {
@@ -187,6 +207,13 @@ table {
 .title-container {
   display: inline-block;
   margin: auto;
+  transform: translate(-30px, 0);
+}
+
+.sub-title-container {
+  display: inline-block;
+  margin: auto;
+  transform: translate(-70px, -19px);
 }
 
 .new-record-button-container {
@@ -195,7 +222,7 @@ table {
 }
 
 .new-record-button {
-  margin-top: 15px;
+  margin-top: -2px;
   font-size: 30px;
   color: #006b97;
   background: none;
@@ -245,13 +272,64 @@ table {
 }
 
 .success-message {
+  transform: translate(-10px, 0);
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -8px;
-  width: 25%;
+  width: 30%;
   padding: 5px;
-  color: green;
+  color: #78c6ed;
+  font-weight: bold;
   font-style: italic;
-  border: 1px solid green;
+  border: 2px solid #78c6ed;
+}
+
+.new-record-row {
+  background-color: #78c6ed;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #006b97;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  margin: auto;
+  margin-right: -5px;
+  color: white;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: #006b97;
+  background-color: whitesmoke;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #78c6ed;
+}
+
+.tab button.active:hover {
+  color: white;
+  background-color: #78c6ed;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #006b97;
+  border-top: none;
+  background-color: whitesmoke;
 }

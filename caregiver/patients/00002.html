@@ -37,91 +37,98 @@
     
       <div class="body-wrapper">
         <div class="menu-wrapper"></div>
-        <div class="topnav">
-          <a href="../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
-          <a class="active" href="../patients.html"><i class="fas fa-user-injured"></i> Patients</a>
-          <a href="../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
-          <a href="../schedules.html"><i class="fas fa-clipboard-list"></i> Schedules</a>
-          <a href="../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
-          <a href="../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
-          <a href="../../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
-          <br>
-          <br>
-          <br>
-          <br>
-          <div class="back-button-container">
-            <button type="button" class="back-button" onclick="location.href='../patients.html'"><i class="fas fa-chevron-circle-left"></i></button>
-          </div>
-          <div class="title-container">
-            <h2>Medical Record List</h2>
-          </div>
-          <div class="new-record-button-container">
-            <button type="button" class="new-record-button" onclick="location.href='records/new-record.html'"><i class="fas fa-plus-circle"></i></button>
-          </div>
+          <div class="topnav">
+            <a href="../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
+            <a class="active" href="../patients.html"><i class="fas fa-user-injured"></i> Patients</a>
+            <a href="../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
+            <a href="../schedules.html"><i class="fas fa-clipboard-list"></i> Schedules</a>
+            <a href="../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
+            <a href="../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
+            <a href="../../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="back-button-container">
+              <button type="button" class="back-button" onclick="location.href='../patients.html'"><i class="fas fa-chevron-circle-left"></i></button>
+            </div>
+            <div class="title-container">
+              <h2>Patient</h2>
+            </div>
 
-          <div class="table-container">
-            <table class="patient-info">
-              <thead>
-                <tr>
-                  <td>Patient ID</td>
-                  <td>Last Name</td>
-                  <td>First Name</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>00002</td>
-                  <td>Ressler</td>
-                  <td>Zachary</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-container">
+              <table class="patient-info">
+                <thead>
+                  <tr>
+                    <td>Patient ID</td>
+                    <td>Last Name</td>
+                    <td>First Name</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>00002</td>
+                    <td>Ressler</td>
+                    <td>Zachary</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            <br>
+
+            <div class="search-container">
+              <i class="fas fa-search" id="search-icon"></i>
+              <input id="search" type="text" placeholder="Search" title="Search any category" onkeyup="filterTable(event)">
+            </div>
+            <div class="sub-title-container">
+              <h2>Patient Records</h2>
+            </div>
+            <div class="new-record-button-container">
+              <button type="button" class="new-record-button" onclick="location.href='records/new-record.html'"><i class="fas fa-plus-circle"></i></button>
+            </div>
+
+            <div style="transform: translate(0, -30px)">
+              <table class="patient-table">
+                <thead>
+                  <tr>
+                    <td>Number</td>
+                    <td>Date</td>
+                    <td>Reason</td>
+                    <td>Visit Type</td>
+                    <td>Paid</td>
+                  </tr>
+                </thead>
+              </table>
+              <table class="patient-table" id="patient-table">
+                <tbody>
+                  <tr>
+                    <td>ZSR-003</td>
+                    <td>3/2/19</td>
+                    <td>Physical Examination</td>
+                    <td>Annual</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>ZSR-002</td>
+                    <td>2/2/19</td>
+                    <td>Ear Infection</td>
+                    <td>Physician</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>ZSR-001</td>
+                    <td>1/2/19</td>
+                    <td>Flu Vaccine</td>
+                    <td>Nurse</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <br>
-          <div class="search-container">
-            <i class="fas fa-search" id="search-icon"></i>
-            <input id="search" type="text" placeholder="Search" title="Search any category" onkeyup="filterTable(event)">
-          </div>
-          <br>
-          <table class="patient-table">
-            <thead>
-              <tr>
-                <td>Number</td>
-                <td>Date</td>
-                <td>Reason</td>
-                <td>Visit Type</td>
-                <td>Paid</td>
-              </tr>
-            </thead>
-          </table>
-          <table class="patient-table" id="patient-table">
-            <tbody>
-              <tr>
-                <td>003</td>
-                <td>3/2/19</td>
-                <td>Physical Examination</td>
-                <td>Annual</td>
-                <td>Yes</td>
-              </tr>
-              <tr>
-                <td>002</td>
-                <td>2/2/19</td>
-                <td>Ear Infection</td>
-                <td>Physician</td>
-                <td>Yes</td>
-              </tr>
-              <tr>
-                <td>001</td>
-                <td>1/2/19</td>
-                <td>Flu Vaccine</td>
-                <td>Nurse</td>
-                <td>Yes</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
-    </div>
     
     <!-- Scripts -->
     <script src="../../scripts/index.js"></script>
