@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <title>New Century Wellness Group - Caregiver Login</title>
+
+    <!-- Browser Tab Icon -->
+    <link rel="icon" href="../../assets/NCWG-Logo.png">
+  
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../styles/index.processed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+  </head>
+  
+  <body>
+    <div class="page">
+      <div class="header-wrapper">
+        <div class="header">
+          <div class="header-image">
+            <a href="../portal.html">
+              <img class="header-logo" src="../../assets/NCWG-Logo.png">
+            </a>
+          </div>
+
+          <div class="header-text">
+            <h1 class="new">NEW </h1>
+            <h1> </h1>
+            <h1 class="century"> CENTURY</h1>
+            <a><hr class="header-line"></hr></a>
+            <h1 class="wellness-group">Wellness Group</h1>
+          </div>
+        </div>
+      </div>
+    
+      <div class="body-wrapper">
+        <div class="menu-wrapper"></div>
+        <div class="topnav">
+          <a href="../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
+          <a class="active" href="../patients.html"><i class="fas fa-user-injured"></i> Patients</a>
+          <a href="../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
+          <a href="../schedules.html"><i class="fas fa-clipboard-list"></i> Schedules</a>
+          <a href="../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
+          <a href="../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
+          <a href="../../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="back-button-container">
+            <button type="button" class="back-button" onclick="history.back()"><i class="fas fa-chevron-circle-left"></i></button>
+          </div>
+          <div class="title-container">
+            <h2>Medical Record List</h2>
+          </div>
+          <div class="new-record-button-container">
+            <button type="button" class="new-record-button"><i class="fas fa-plus-circle"></i></button>
+          </div>
+
+          <div class="table-container">
+            <table class="patient-info">
+              <thead>
+                <tr>
+                  <td>Patient ID</td>
+                  <td>Last Name</td>
+                  <td>First Name</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>00002</td>
+                  <td>Ressler</td>
+                  <td>Zachary</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <div class="search-container">
+            <i class="fas fa-search" id="search-icon"></i>
+            <input id="search" type="text" placeholder="Search" title="Search any category" onkeyup="filterTable(event)">
+          </div>
+          <br>
+          <table class="patient-table">
+            <thead>
+              <tr>
+                <td>Number</td>
+                <td>Date</td>
+                <td>Reason</td>
+                <td>Visit Type</td>
+                <td>Paid</td>
+              </tr>
+            </thead>
+          </table>
+          <table class="patient-table" id="patient-table">
+            <tbody>
+              <tr>
+                <td>003</td>
+                <td>3/2/19</td>
+                <td>Physical Examination</td>
+                <td>Annual</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>2/2/19</td>
+                <td>Ear Infection</td>
+                <td>Physician</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>001</td>
+                <td>1/2/19</td>
+                <td>Flu Vaccine</td>
+                <td>Nurse</td>
+                <td>Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="../../scripts/index.js"></script>
+  </body>
+</html>
