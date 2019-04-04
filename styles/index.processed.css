@@ -334,6 +334,11 @@ table {
   background-color: whitesmoke;
 }
 
+.inner-tab-header {
+  width: 25%;
+  display: inline-block;
+}
+
 .inner-tab-content {
   width: 45%;
   display: inline-block;
@@ -341,6 +346,8 @@ table {
 
 /* The switch - the box around the slider */
 .switch {
+  margin-top: 5px;
+  margin-bottom: 5px;
   position: relative;
   display: inline-block;
   width: 36px;
@@ -396,4 +403,19 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+input[type=date] {
+  height: 16px;
+}
+
+input[type=radio] {
+  margin: 7px;
+  height: 16px;
+}
+
+textarea {
+  margin: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
 }

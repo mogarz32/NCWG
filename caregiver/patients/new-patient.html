@@ -38,102 +38,260 @@
     
       <div class="body-wrapper">
         <div class="menu-wrapper"></div>
-          <div class="topnav">
-            <a href="../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
-            <a class="active" href="../../patients.html"><i class="fas fa-user-injured"></i> Patients</a>
-            <a href="../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
-            <a href="../schedules.html"><i class="fas fa-clipboard-list"></i> Schedules</a>
-            <a href="../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
-            <a href="../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
-            <a href="../../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="back-button-container">
-              <button type="button" class="back-button" title="Back" onclick="location.href='../patients.html'"><i class="fas fa-chevron-circle-left"></i></button>
-            </div>
-            <div class="title-container" style="transform: translate(0, 0)">
-              <h2>New Patient</h2>
-            </div>
-            <div class="save-record-button-container">
-              <button type="button" class="save-record-button" title="Save" onclick="location.href='../patients-updated.html'"><i class="fas fa-save"></i></button>
-            </div>
+        <div class="topnav">
+          <a href="../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
+          <a class="active" href="../patients.html"><i class="fas fa-user-injured"></i> Patients</a>
+          <a href="../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
+          <a href="../schedules.html"><i class="fas fa-clipboard-list"></i> Schedules</a>
+          <a href="../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
+          <a href="../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
+          <a href="../../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="back-button-container">
+            <button type="button" class="back-button" title="Back" onclick="location.href='../patients.html'"><i class="fas fa-chevron-circle-left"></i></button>
+          </div>
+          <div class="title-container" style="transform: translate(0, 0)">
+            <h2>New Patient</h2>
+          </div>
+          <div class="save-record-button-container">
+            <button type="button" class="save-record-button" title="Save" onclick="location.href='../patients-updated.html'"><i class="fas fa-save"></i></button>
+          </div>
 
-            <div class="tab-container">
-              <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'patient-info')" id="defaultOpen">Patient Information</button>
-                <button class="tablinks" onclick="openTab(event, 'medical-history')">Medical History</button>
-                <button class="tablinks" onclick="openTab(event, 'physical-exam')">Physical Examination</button>
-                <button class="tablinks" onclick="openTab(event, 'notes')"> Additional Notes</button>
-               </div>
+          <div class="tab-container">
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'patient-info')" id="defaultOpen"><i class="fas fa-info-circle"></i> Patient Information</button>
+              <button class="tablinks" onclick="openTab(event, 'medical-history')"><i class="fas fa-file-medical-alt"></i> Medical History</button>
+              <button class="tablinks" onclick="openTab(event, 'physical-exam')"><i class="fas fa-stethoscope"></i> Physical Examination</button>
+              <button class="tablinks" onclick="openTab(event, 'notes')"><i class="fas fa-notes-medical"></i> Additional Notes</button>
+             </div>
 
-              <div id="patient-info" class="tabcontent">
-                <h3>Patient Information</h3>
-                <div class="inner-tab-content">
-                  <form>
-                    <strong>Patient Number: 00004</strong>
-                    <br>
-                    <br>
-                    First name: <input type="text">
-                    <br>
-                    <br>
-                    Middle name: <input type="text">
-                    <br>
-                    <br>
-                    Last name: <input type="text">
-                    <br>
-                    <br>
-                    Social Security #: <input type="number">
-                    <br>
-                    <br>
-                    Insurance: <input type="text">
-                    <br>
-                    <br>
-                  </form>
-                </div>
-                <div class="inner-tab-content">
-                  <form>
-                    <strong>Medical Record Abbreviation: LMD-</strong>
-                    <br>
-                    <br>
-                    Date of Birth: <input type="date">
-                    <br>
-                    <br>
-                    Gender: <em>Male</em> <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span>
-                    </label> <em>Female</em>
-                    <br>
-                    <br>
-                    Address: <input type="text">
-                    <br>
-                    <br>
-                    Phone Number: <input type="tel">
-                    <br>
-                    <br>
-                    Email: <input type="email">
-                    <br>
-                    <br>
-                  </form>
-                </div>
+            <div id="patient-info" class="tabcontent">
+              <h3>Patient Information</h3>
+              <div class="inner-tab-header">
+                <strong>Patient Number: <font color="#78c6ed">00004</font></strong>
+              </div>
+              <div class="inner-tab-header">
+                <strong>Medical Record Abbreviation: <font color="#78c6ed">LMD-</font></strong>
+              </div>
+              <div class="inner-tab-header">
+                <strong>Visit Date: <font color="#78c6ed">3/4/19</font></strong>
+              </div>
+              <a><hr class="header-line"></hr></a>
+              <br>
+
+              <div class="inner-tab-content">
+                First name: <input type="text">
+                <br>
+                <br>
+                Middle name: <input type="text">
+                <br>
+                <br>
+                Last name: <input type="text">
+                <br>                    
+                <br>
+                Social Security #: <input type="number">
+                <br>
+                <br>
+                Insurance: <input type="text">
               </div>
 
-              <div id="medical-history" class="tabcontent">
-                <h3>Medical History</h3>
+              <div class="inner-tab-content">
+                Date of Birth: <input type="date">
+                <br>
+                <br>
+                Gender: <em>Male</em> <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label> <em>Female</em>
+                <br>
+                <br>
+                Address: <input type="text">
+                <br>
+                <br>
+                Phone Number: <input type="tel">
+                <br>
+                <br>
+                Email: <input type="email">
               </div>
+              <br>
+              <br>
+            </div>
 
-              <div id="physical-exam" class="tabcontent">
-                <h3>Physical Examination</h3>
+            <div id="medical-history" class="tabcontent">
+              <h3>Medical History</h3>
+              <div class="inner-tab-header">
+                <strong>Patient Number: <font color="#78c6ed">00004</font></strong>
               </div>
+              <div class="inner-tab-header">
+                <strong>Medical Record Abbreviation: <font color="#78c6ed">LMD-</font></strong>
+              </div>
+              <div class="inner-tab-header">
+                <strong>Visit Date: <font color="#78c6ed">3/4/19</font></strong>
+              </div>
+              <a><hr class="header-line"></hr></a>
+              <br>
 
-              <div id="notes" class="tabcontent">
-                <h3>Additional Notes</h3>
+              <div>
+                Chronic Medical Conditions:
+                <br>
+                <textarea cols="50" rows="4"></textarea>
+                <br>
+                <br>
+                Surgeries:
+                <br>
+                <textarea cols="50" rows="4"></textarea>
+                <br>
+                <br>
+                Medications:
+                <br>
+                <textarea cols="50" rows="4"></textarea>
+                <br>
+                <br>
+                Treatments:
+                <br>
+                <textarea cols="50" rows="4"></textarea>
+                <br>
+                <br>
+                Allergies:
+                <br>
+                <textarea cols="50" rows="4"></textarea>
+                <br>
+                <br>
+                Physical Activity Limitations:
+                <br>
+                <textarea cols="50" rows="4"></textarea>
               </div>
             </div>
 
+            <div id="physical-exam" class="tabcontent">
+              <h3>Physical Examination</h3>
+              <div class="inner-tab-header">
+                <strong>Patient Number: <font color="#78c6ed">00004</font></strong>
+              </div>
+              <div class="inner-tab-header">
+                <strong>Medical Record Abbreviation: <font color="#78c6ed">LMD-</font></strong>
+              </div>
+              <div class="inner-tab-header">
+                <strong>Visit Date: <font color="#78c6ed">3/4/19</font></strong>
+              </div>
+              <a><hr class="header-line"></hr></a>
+              <br>
+
+              <div class="inner-tab-content">
+                Height: <input type="number" maxlength="5" size="5" style="width: 60px"> <em>Inches</em>
+                <br>
+                <br>
+                Weight: <input type="number" maxlength="5" size="5" style="width: 60px"> <em>Pounds</em>
+                <br>
+                <br>
+                Blood Pressure: <input type="number" maxlength="3" size="3" style="width: 40px"> / <input type="number" maxlength="3" size="3" style="width: 40px">
+                <br>
+                <br>
+                Abnormalities:
+                <br>
+                <textarea cols="30" rows="4"></textarea>
+              </div>
+
+              <div class="inner-tab-content">
+                Hearing Test: 
+                <input type="radio" name="hearing" value="N/A" checked="checked"> N/A
+                <input type="radio" name="hearing" value="Pass"> Pass
+                <input type="radio" name="hearing" value="Fail"> Fail
+                <br>
+                <br>
+
+                Vision Test: 
+                <input type="radio" name="vision" value="N/A" checked="checked"> N/A
+                <input type="radio" name="vision" value="Pass"> Pass
+                <input type="radio" name="vision" value="Fail"> Fail
+                <br>
+                <br>
+
+                Dental Exam: 
+                <input type="radio" name="dental" value="N/A" checked="checked"> N/A
+                <input type="radio" name="dental" value="Pass"> Pass
+                <input type="radio" name="dental" value="Fail"> Fail
+                <br>
+                <br>
+
+                Developmental Exam: 
+                <input type="radio" name="develop" value="N/A" checked="checked"> N/A
+                <input type="radio" name="develop" value="Pass"> Pass
+                <input type="radio" name="develop" value="Fail"> Fail
+                <br>
+                <br>
+
+                Scoliosis Exam: 
+                <input type="radio" name="scoliosis" value="N/A" checked="checked"> N/A
+                <input type="radio" name="scoliosis" value="Pass"> Pass
+                <input type="radio" name="scoliosis" value="Fail"> Fail
+                <br>
+                <br>
+              </div>
+              <br>
+              <br>
+            </div>
+
+            <div id="notes" class="tabcontent">
+              <h3>Additional Notes</h3>
+              <div class="inner-tab-header">
+                <strong>Patient Number: <font color="#78c6ed">00004</font></strong>
+              </div>
+              <div class="inner-tab-header">
+                <strong>Medical Record Abbreviation: <font color="#78c6ed">LMD-</font></strong>
+              </div>
+              <div class="inner-tab-header">
+                <strong>Visit Date: <font color="#78c6ed">3/4/19</font></strong>
+              </div>
+              <a><hr class="header-line"></hr></a>
+              <br>
+              
+              <div class="inner-tab-content">
+                Followup Appointment?: 
+                <input type="radio" name="followup" value="No" checked="checked"> No
+                <input type="radio" name="followup" value="Yes"> Yes
+              </div>
+              <div class="inner-tab-content">
+                Next Appointment Date: <input type="date">
+              </div>
+              <br>
+              <br>
+
+              <div class="inner-tab-content">
+                Prescription?: 
+                <input type="radio" name="prescription" value="No" checked="checked"> No
+                <input type="radio" name="prescription" value="Yes"> Yes
+              </div>
+              <div class="inner-tab-content">
+                Prescription Name: <input type="text">
+              </div>
+              <br>
+              <br>
+
+              <div class="inner-tab-content">
+                Lab Work?: 
+                <input type="radio" name="lab" value="No" checked="checked"> No
+                <input type="radio" name="lab" value="Yes"> Yes
+              </div>
+              <div class="inner-tab-content">
+                Lab Work Type: <input type="text">                
+              </div>
+              <br>
+              <br>
+
+              <div>
+                Additional Notes: 
+                <br>
+                <textarea cols="80" rows="12"></textarea>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
     
     <!-- Scripts -->
     <script src="../../scripts/index.js"></script>
