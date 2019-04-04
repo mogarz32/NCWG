@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Century Wellness Group - Caregiver Login</title>
+
+    <!-- Browser Tab Icon -->
+    <link rel="icon" href="../../assets/NCWG-Logo.png">
+  
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../styles/index.processed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+  </head>
+  
+  <body>
+    <div class="page">
+      <div class="header-wrapper">
+        <div class="header">
+          <div class="header-image">
+            <a href="../portal.html">
+              <img class="header-logo" src="../../assets/NCWG-Logo.png">
+            </a>
+          </div>
+
+          <div class="header-text">
+            <h1 class="new">NEW </h1>
+            <h1> </h1>
+            <h1 class="century"> CENTURY</h1>
+            <a><hr class="header-line"></hr></a>
+            <h1 class="wellness-group">Wellness Group</h1>
+          </div>
+        </div>
+      </div>
+    
+      <div class="body-wrapper">
+        <div class="menu-wrapper"></div>
+          <div class="topnav">
+            <a href="../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
+            <a class="active" href="../../patients.html"><i class="fas fa-user-injured"></i> Patients</a>
+            <a href="../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
+            <a href="../schedules.html"><i class="fas fa-clipboard-list"></i> Schedules</a>
+            <a href="../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
+            <a href="../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
+            <a href="../../index.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="back-button-container">
+              <button type="button" class="back-button" title="Back" onclick="location.href='../patients.html'"><i class="fas fa-chevron-circle-left"></i></button>
+            </div>
+            <div class="title-container" style="transform: translate(0, 0)">
+              <h2>New Patient</h2>
+            </div>
+            <div class="save-record-button-container">
+              <button type="button" class="save-record-button" title="Save" onclick="location.href='../patients-updated.html'"><i class="fas fa-save"></i></button>
+            </div>
+
+            <div class="tab-container">
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'patient-info')" id="defaultOpen">Patient Information</button>
+                <button class="tablinks" onclick="openTab(event, 'medical-history')">Medical History</button>
+                <button class="tablinks" onclick="openTab(event, 'physical-exam')">Physical Examination</button>
+                <button class="tablinks" onclick="openTab(event, 'notes')"> Additional Notes</button>
+               </div>
+
+              <div id="patient-info" class="tabcontent">
+                <h3>Patient Information</h3>
+                <div class="inner-tab-content">
+                  <form>
+                    <strong>Patient Number: 00004</strong>
+                    <br>
+                    <br>
+                    First name: <input type="text">
+                    <br>
+                    <br>
+                    Middle name: <input type="text">
+                    <br>
+                    <br>
+                    Last name: <input type="text">
+                    <br>
+                    <br>
+                    Social Security #: <input type="number">
+                    <br>
+                    <br>
+                    Insurance: <input type="text">
+                    <br>
+                    <br>
+                  </form>
+                </div>
+                <div class="inner-tab-content">
+                  <form>
+                    <strong>Medical Record Abbreviation: LMD-</strong>
+                    <br>
+                    <br>
+                    Date of Birth: <input type="date">
+                    <br>
+                    <br>
+                    Gender: <em>Male</em> <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label> <em>Female</em>
+                    <br>
+                    <br>
+                    Address: <input type="text">
+                    <br>
+                    <br>
+                    Phone Number: <input type="tel">
+                    <br>
+                    <br>
+                    Email: <input type="email">
+                    <br>
+                    <br>
+                  </form>
+                </div>
+              </div>
+
+              <div id="medical-history" class="tabcontent">
+                <h3>Medical History</h3>
+              </div>
+
+              <div id="physical-exam" class="tabcontent">
+                <h3>Physical Examination</h3>
+              </div>
+
+              <div id="notes" class="tabcontent">
+                <h3>Additional Notes</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    
+    <!-- Scripts -->
+    <script src="../../scripts/index.js"></script>
+  </body>
+</html>

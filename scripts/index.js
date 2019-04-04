@@ -1,3 +1,14 @@
+/* function authenticate() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if(username == "zsr5008" && password == "vitaminz") {
+        window.location.href = "https://www.personal.psu.edu/zsr5008/caregiver/portal.html";
+    } else {
+        alert("Incorrect username/password");
+    }
+}*/
+
 function filterTable(event) {
     var filter = event.target.value.toUpperCase();
     var rows = document.querySelector("#patient-table tbody").rows;
