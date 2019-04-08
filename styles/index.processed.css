@@ -57,6 +57,22 @@ h1 {
   color: #006b97;
 }
 
+.user-choice {
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  font-size: 60px;
+  color: white;
+  background-color: #006b97;
+  border: 2px solid whitesmoke;
+  cursor: pointer;
+}
+
+.user-choice:hover {
+  background-color: #78c6ed;
+}
+
 input {
   padding: 5px;
   font-size: 14px;
