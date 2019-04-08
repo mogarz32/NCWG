@@ -430,6 +430,10 @@ input[type=radio] {
   height: 16px;
 }
 
+.radio {
+  font-style: italic;
+}
+
 textarea {
   margin: 5px;
   font-size: 16px;
