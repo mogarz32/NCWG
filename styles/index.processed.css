@@ -18,7 +18,7 @@ body {
   display: flex;
 }
 
-header-image {
+.header-image {
   padding: 0;
   display: inline-block;
 }
@@ -32,6 +32,11 @@ header-image {
   vertical-align: middle;
   display: inline-block;
   padding-left: 10px;
+  text-shadow:
+    -1px -1px 0 whitesmoke,
+    1px -1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke,
+    1px 1px 0 whitesmoke;  
 }
 
 h1 {

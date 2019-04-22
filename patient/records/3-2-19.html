@@ -7,10 +7,10 @@
     <title>Create New Record</title>
 
     <!-- Browser Tab Icon -->
-    <link rel="icon" href="../../../assets/NCWG-Logo.png">
+    <link rel="icon" href="../../assets/NCWG-Logo.png">
   
     <!-- Styles -->
-    <link rel="stylesheet" href="../../../styles/index.processed.css">
+    <link rel="stylesheet" href="../../styles/index.processed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
@@ -18,11 +18,12 @@
   
   <body>
     <div class="page">
-      <div class="header-wrapper">
+      <div class="header-wrapper" style="background-image: url('../../assets/records-banner.png');
+  background-repeat: no-repeat; background-size: cover;">
         <div class="header">
           <div class="header-image">
-            <a href="../../portal.html">
-              <img class="header-logo" src="../../../assets/NCWG-Logo.png">
+            <a href="../portal.html">
+              <img class="header-logo" src="../../assets/NCWG-Logo.png">
             </a>
           </div>
 
@@ -39,28 +40,24 @@
       <div class="body-wrapper">
         <div class="menu-wrapper"></div>
           <div class="topnav">
-            <a href="../../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
-            <a class="active" href="../../patients.html"><i class="fas fa-user-injured"></i> Patients</a>
-            <a href="../../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
-            <a href="../../schedules.html"><i class="fas fa-clipboard-list"></i> Schedules</a>
-            <a href="../../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
-            <a href="../../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
-            <a href="../../../caregiver-login.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            <a href="../portal.html"><i class="fab fa-medrt"></i> Portal Home</a>
+            <a class="active" href="../records.html"><i class="fas fa-user-injured"></i> Medical Records</a>
+            <a href="../appointments.html"><i class="fas fa-calendar-check"></i> Appointments</a>
+            <a href="../messages.html"><i class="fas fa-envelope-open-text"></i> Messages</a>
+            <a href="../my-profile.html"><i class="fas fa-user-md"></i> My Profile</a>
+            <a href="../services.html"><i class="fas fa-diagnoses"></i> Services</a>
+            <a href="../../patient-login.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
             <br>
             <br>
             <br>
             <br>
             
             <div class="back-button-container">
-              <button type="button" class="back-button" title="Back" onclick="location.href='../00002.html'"><i class="fas fa-chevron-circle-left"></i></button>
+              <button type="button" class="back-button" title="Back" onclick="location.href='../records.html'"><i class="fas fa-chevron-circle-left"></i></button>
             </div>
 
             <div class="title-container" style="transform: translate(0, 0)">
-              <h2>New Medical Record</h2>
-            </div>
-
-            <div class="save-record-button-container">
-              <button type="button" class="save-record-button" title="Save" onclick="location.href='../00002-updated.html'"><i class="fas fa-save"></i></button>
+              <h2>Record from 03/02/2019</h2>
             </div>
 
             <div class="tab-container">
@@ -303,6 +300,6 @@ Physical Therapy Visit:
     </body>
     
     <!-- Scripts -->
-    <script src="../../../scripts/index.js"></script>
+    <script src="../../scripts/index.js"></script>
   </body>
 </html>
