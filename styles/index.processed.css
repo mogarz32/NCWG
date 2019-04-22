@@ -78,6 +78,22 @@ h1 {
   background-color: #78c6ed;
 }
 
+.service-choice {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  color: white;
+  background-color: #006b97;
+  border: 2px solid whitesmoke;
+  cursor: pointer;
+}
+
+.service-choice:hover {
+  background-color: #78c6ed;
+}
+
 input {
   padding: 5px;
   font-size: 14px;
