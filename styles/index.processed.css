@@ -460,3 +460,8 @@ textarea {
   font-size: 16px;
   border: 1px solid #ccc;
 }
+
+.content {
+  width: 45%;
+  display: inline-block;
+}
